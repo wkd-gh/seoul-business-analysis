@@ -2,7 +2,7 @@
 #### Q9: 역삼1동의 상권을 분석하시오: 역삼1동 상점의 위치를 업종별(대분류 기준)로 지도에 나타냄
 ds.yeoksam <- subset(ds.total, ds.total$수집연월==5&
                        ds.total$행정동명=="역삼1동")
-register_google(key="AIzaSyBexrhiyy5u-Fd4dTzXFyzKiCiuod9raWs")  
+register_google(key = ) # 개인 구글 api키 사용  
 cen <- c(mean(ds.yeoksam$경도),mean(ds.yeoksam$위도))
 map <- get_googlemap(center = cen,          # 마커 없는 지도 가져오기
                      maptype="roadmap",

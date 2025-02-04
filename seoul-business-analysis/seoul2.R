@@ -66,7 +66,7 @@ store.region.loc <- aggregate(ds.201712[,c("경도","위도")],
 
 #지도 위에 구별 점포수 표시
 store.region <- data.frame(store.region,store.region.loc[,2:3])
-register_google(key="AIzaSyBexrhiyy5u-Fd4dTzXFyzKiCiuod9raWs")
+register_google(key="") # 개인 구글 api키 사용
 cen <- c(mean(store.region$경도), mean(store.region$위도))
 map <- get_googlemap(center=cen,                # 마커 없는 지도 가져오기
                      maptype="roadmap",
